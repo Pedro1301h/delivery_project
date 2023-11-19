@@ -24,6 +24,7 @@ main{
     padding: 15px;
     margin: 50px 100px;
     min-width: 350px;
+    user-select: none;
 }
 
 .produto > img{

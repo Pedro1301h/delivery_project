@@ -1,43 +1,90 @@
 
-let menos = document.querySelector('.menos')
-let mais = document.querySelector('.mais')
-let qnt = document.querySelector('.qnt')
-let preco = document.querySelector('.preco')
-let subtotal = document.querySelector('.subtotal')
-let q = Number(qnt.value)
-let s = Number(subtotal.value)
-let p = Number(preco.value)
-q=0
+//----------------------------Teste sem OO----------------------------------------
+
+let menos_prod_01 = document.querySelector('#menos_prod_01')
+let mais_prod_01 = document.querySelector('#mais_prod_01')
+let qnt_prod_01 = document.querySelector('#qnt_prod_01')
+let preco_prod_01 = document.querySelector('#preco_prod_01')
+let subtotal_prod_01 = document.querySelector('#subtotal_prod_01')
+let q_prod_01 = Number(qnt_prod_01.value)
+let s_prod_01 = Number(subtotal_prod_01.value)
+let p_prod_01 = Number(preco_prod_01.value)
+q_prod_01=0
 
 //preço dos produtos
-let heineken = 7.9
-preco.innerHTML=heineken.toLocaleString('pt-br',{style:'currency',currency:'BRL'})
+let valor_prod_01 = 7.9
+preco_prod_01.innerHTML=valor_prod_01.toLocaleString('pt-br',{style:'currency',currency:'BRL'})
 
 //-----------------
 
-menos.addEventListener('click',subtrair)
-mais.addEventListener('click',somar)
+menos_prod_01.addEventListener('click',subtrair)
+mais_prod_01.addEventListener('click',somar)
 
 function subtrair(){
-    if(q == 0){
+    if(q_prod_01 == 0){
         return 0
     }else
-    qnt.innerHTML=q-=1
+    qnt_prod_01.innerHTML=q_prod_01-=1
 
-    const valorHeineken = q*heineken
-    if(valorHeineken != 0){
-        subtotal.innerHTML='Total: '+valorHeineken.toLocaleString('pt-br',{style:'currency',currency:'BRL'})
+    const total_prod_01 = q_prod_01*valor_prod_01
+    if(total_prod_01 != 0){
+        subtotal_prod_01.innerHTML='Total: '+total_prod_01.toLocaleString('pt-br',{style:'currency',currency:'BRL'})
     }else 
-        subtotal.innerHTML=''
+        subtotal_prod_01.innerHTML=''
 }
 
 
 function somar(){
-    qnt.innerHTML=q+=1
+    qnt_prod_01.innerHTML=q_prod_01+=1
     
-    const valorHeineken = q*heineken
-    subtotal.innerHTML='Total: '+valorHeineken.toLocaleString('pt-br',{style:'currency',currency:'BRL'})
+    const total_prod_01 = q_prod_01*valor_prod_01
+    subtotal_prod_01.innerHTML='Total: '+total_prod_01.toLocaleString('pt-br',{style:'currency',currency:'BRL'})
 }
+
+
+//--------------------------------Teste sem OO-------------------------------------------
+
+
+let menos_prod_02 = document.querySelector('#menos_prod_02')
+let mais_prod_02 = document.querySelector('#mais_prod_02')
+let qnt_prod_02 = document.querySelector('#qnt_prod_02')
+let preco_prod_02 = document.querySelector('#preco_prod_02')
+let subtotal_prod_02 = document.querySelector('#subtotal_prod_02')
+let q_prod_02 = Number(qnt_prod_02.value)
+let s_prod_02 = Number(subtotal_prod_02.value)
+let p_prod_02 = Number(preco_prod_02.value)
+q_prod_02=0
+
+//preço dos produtos
+let valor_prod_02 = 6.9
+preco_prod_02.innerHTML=valor_prod_02.toLocaleString('pt-br',{style:'currency',currency:'BRL'})
+
+//-----------------
+
+menos_prod_02.addEventListener('click',sub02)
+mais_prod_02.addEventListener('click',soma02)
+
+function sub02(){
+    if(q_prod_02 == 0){
+        return 0
+    }else
+    qnt_prod_02.innerHTML=q_prod_02-=1
+
+    const total_prod_02 = q_prod_02*valor_prod_02
+    if(total_prod_02 != 0){
+        subtotal_prod_02.innerHTML='Total: '+total_prod_02.toLocaleString('pt-br',{style:'currency',currency:'BRL'})
+    }else 
+        subtotal_prod_02.innerHTML=''
+}
+
+
+function soma02(){
+    qnt_prod_02.innerHTML=q_prod_02+=1
+    
+    const total_prod_02 = q_prod_02*valor_prod_02
+    subtotal_prod_02.innerHTML='Total: '+total_prod_02.toLocaleString('pt-br',{style:'currency',currency:'BRL'})
+}
+
 
 
 
