@@ -1,5 +1,5 @@
 
-//----------------------------Teste sem OO----------------------------------------
+//----------------------------Produto 01----------------------------------------
 
 let menos_prod_01 = document.querySelector('#menos_prod_01')
 let mais_prod_01 = document.querySelector('#mais_prod_01')
@@ -42,7 +42,7 @@ function somar(){
 }
 
 
-//--------------------------------Teste sem OO-------------------------------------------
+//--------------------------------Produto 02-------------------------------------------
 
 
 let menos_prod_02 = document.querySelector('#menos_prod_02')
