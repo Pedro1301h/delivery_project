@@ -7,8 +7,6 @@ let qnt_prod_01 = document.querySelector('#qnt_prod_01')
 let preco_prod_01 = document.querySelector('#preco_prod_01')
 let subtotal_prod_01 = document.querySelector('#subtotal_prod_01')
 let q_prod_01 = Number(qnt_prod_01.value)
-let s_prod_01 = Number(subtotal_prod_01.value)
-let p_prod_01 = Number(preco_prod_01.value)
 q_prod_01=0
 
 //preço dos produtos
@@ -51,8 +49,6 @@ let qnt_prod_02 = document.querySelector('#qnt_prod_02')
 let preco_prod_02 = document.querySelector('#preco_prod_02')
 let subtotal_prod_02 = document.querySelector('#subtotal_prod_02')
 let q_prod_02 = Number(qnt_prod_02.value)
-let s_prod_02 = Number(subtotal_prod_02.value)
-let p_prod_02 = Number(preco_prod_02.value)
 q_prod_02=0
 
 //preço dos produtos
